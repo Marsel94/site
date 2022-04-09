@@ -103,6 +103,9 @@ body {
     height: 100vh;
     position: relative;
     z-index: 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
 }
 
 .section_main::before {
@@ -133,7 +136,7 @@ body {
 }
 
 .title_descr {
-    margin-bottom: 140px;
+    
 }
 
 .arrow_down {
@@ -147,7 +150,6 @@ body {
 .about_me {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 .about_photo {
@@ -158,6 +160,7 @@ body {
 
 .about_photo-me {
     width: 100%;
+    object-fit: cover;
 }
 
 .about__descr {
@@ -525,16 +528,14 @@ span {
     line-height: 1.23;
     font-weight: 400;
 }
-.contact_number--link {
-}
+
 .contact__mail {
     font-size: 42px;
     line-height: 1.23;
     font-weight: 400;
     margin-bottom: 45px;
 }
-.contacts_email--link {
-}
+
 .contact__adres {
     margin-bottom: 45px;
     font-size: 24px;
@@ -546,14 +547,6 @@ span {
 }
 .social__item:not(:last-child) {
     margin-right: 10px;
-}
-.social__link {
-}
-.social__link-inst {
-}
-.social__link-whatsap {
-}
-.social__link-telegram {
 }
 
 .footer {
@@ -579,6 +572,7 @@ span {
     .about_photo {
         margin-bottom: 40px;
         width: 100%;
+        height: 100%;
     }
 
     .about_text {
