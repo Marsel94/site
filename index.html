@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,200;0,400;0,600;1,300&display=swap"
         rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -75,8 +76,8 @@
                     </div>
                     <div class="about_text">
                         <h3 class="about_title">О себе</h3>
-                        <p class="about__descr">Член коллегии адвокатов "Советник"
-                            Адвокатская палата Тюменской области, регистрационный № 72/1467.
+                        <p class="about__descr">Член коллегии адвокатов "Советник".
+                            Адвокатская палата Тюменской области, регистрационный № 72/1467. <br>
                             Закончила в 2005 году Уральскую государственную юридическую академию. <br>
                             Юридический стаж - 17 лет.
                         </p>
@@ -275,11 +276,10 @@
             <div class="container">
                 <div class="consultations__wrapper">
                     <div class="consultations__text">
-                        <p>
-                            Изначально важно разложить перед доверителем реально возможные варианты развития его
-                            ситуации,
-                            не обнадеживая его понапрасну и предупреждая обо все рисках и последствиях. И только тогда
-                            человек сам должен принять решение, идти или не идти в суд.
+                        <p style="text-indent:35px;">
+                            <<Изначально важно разложить перед доверителем реально возможные варианты развития его
+                                ситуации, не обнадеживая его понапрасну и предупреждая обо всех рисках и последствиях. И
+                                только тогда человек сам должен принять решение, идти или не идти в суд...>>
                         </p>
                     </div>
                     <button class="btn">
@@ -296,21 +296,28 @@
         <section class="questions">
             <div class="container">
                 <h3 class="questions_title">
-                    Помогу решить ваш юридический вопрос
+                    Помогу решить Ваш юридический вопрос
                 </h3>
                 <div class="questions__sub_title">
                     <p class="questions__descr">
-                        Воспользуйтесь формой обратной связи. Опишите кратко вашу ситуацию.
+                        Воспользуйтесь формой обратной связи.
                     </p>
                     <p class="questions__descr">
-                        Укажите ваш телефон.
+                        Укажите Ваше имя и телефон.
                     </p>
                     <p class="questions__descr">
-                        Напишите в мессенджеры: Вайбер, Ватсап,Телеграмм.
+                        Опишите кратко Вашу ситуацию.
                     </p>
                     <p class="questions__descr">
+                        Напишите в мессенджеры: Viber, WhatsApp, Telegram.
+                    </p>
+                    <p class="questions__descr" style="text-indent:88px;">
                         Вы можете приехать в офис и на месте заключить соглашение об оказании юридической помощи.
                     </p>
+                    <!-- <span class="descr">
+                        Член коллегии адвокатов "Советник". Адвокатская палата Тюменской области, регистрационный №
+                        72/1467.
+                    </span> -->
                 </div>
             </div>
         </section>
@@ -318,6 +325,13 @@
         <section class="forms">
             <div class="container">
                 <form class="form" action="#">
+
+                    <!-- Hidden Required Fields -->
+                    <input type="hidden" name="project_name" value="Адвокат по гражданским и арбитражным делам">
+                    <input type="hidden" name="admin_email" value="dante201094@yandex.ru">
+                    <input type="hidden" name="form_subject" value="Form Subject">
+                    <!-- END Hidden Required Fields -->
+
                     <div class="form__name">
                         <label class="form__label">
                             <input type="text" name="name" aria-label="Ваше имя" required placeholder="Ваше имя">
@@ -332,7 +346,7 @@
                     <div class="form__message">
                         <label class="form__label">
                             <textarea name="message" aria-label="Ваше сообщение" required
-                                placeholder="Текст вашего сообщения"></textarea>
+                                placeholder="Краткое описание ситуации"></textarea>
                         </label>
                     </div>
                     <button class="form__btn-send" type="submit" aria-label="Отправить" href="#">Отправить</button>
@@ -416,6 +430,7 @@
             </div>
         </footer>
     </main>
+    <script src="js/script.js"></script>
 </body>
 
 </html> -->
